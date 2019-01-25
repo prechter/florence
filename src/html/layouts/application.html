@@ -1,12 +1,15 @@
 {% from 'macros/helpers.html' import sprite %}
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>{% block title %}{{ title }}{% endblock %}</title>
     <link rel="stylesheet" href="stylesheets/app.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    {% include "shared/app-icons.html" %}
+    <meta name="description" content="Our explorations led to the concept of Florence — a personal companion that would help patients understand and manage their medication regimen. A chatbot at heart, patients would converse with her through text and picture messages. If developed, a simple, familiar interface would hide her powerful intelligence. Behind the scenes, machine learning and behavioral modeling would enable her to offer a tailored, human experience based on each patient’s needs.">
+    {% include "partials/app-icons.html" %}
     {% block head %}{% endblock %}
   </head>
   <body>
