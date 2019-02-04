@@ -1,3 +1,13 @@
+@font-face {
+  font-family: 'Geomanist Regular';
+  src: url('../../fonts/geomanist-regular-webfont.woff');
+}
+
+@font-face {
+  font-family: 'Geomanist Medium';
+  src: url('../../fonts/geomanist-medium-webfont.woff');
+}
+
 $colors: (
   cool-charcoal:        #252224,
   warm-charcoal:        #504949,
@@ -12,3 +22,4 @@ $colors: (
   coral-pink:           #EA4446,
   gradient-background:  linear-gradient(#184D66 0%, #D3E7E2 100%)
 );
+

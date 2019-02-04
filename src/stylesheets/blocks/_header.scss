@@ -3,14 +3,29 @@
 }
 
 .header__title {
+  font-family: 'Geomanist Medium';
+  font-size: rem(11);
+  letter-spacing: rem(1.5);
+  line-height: rem(37);
+  text-transform: uppercase;
+  color: color(emerald-green);
   margin: 0;
+  text-align: center;
 }
 
 .header__img {
   display: block;
-  width: 80vw;
+  width: 100vw;
+  box-sizing: border-box;
   margin-right: auto;
   margin-left: auto;
+  padding: 0 rem(20) 0 rem(20);
+}
+
+.header__nav {
+  display: none;
+
+  
 }
 
 
