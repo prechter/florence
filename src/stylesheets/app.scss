@@ -1,16 +1,5 @@
-//base
-@import "base/colors";
-@import "base/typography";
-
-//functions
-@import "functions/colors";
-
-//partials
-@import "partials/behind-the-scenes";
-@import "partials/closing";
-@import "partials/concept";
-@import "partials/footer";
-@import "partials/header";
-@import "partials/key-factors";
-@import "partials/problem";
-@import "partials/question";
+@import "base/*.scss";
+@import "blocks/*.scss";
+@import "functions/*.scss";
+@import "mixins/*.scss";
+@import "utility/*.scss";
