@@ -2903,6 +2903,16 @@ gulp-rev@7.1.2:
     through2 "^2.0.0"
     vinyl-file "^1.1.0"
 
+gulp-sass-glob@^1.0.9:
+  version "1.0.9"
+  resolved "https://registry.yarnpkg.com/gulp-sass-glob/-/gulp-sass-glob-1.0.9.tgz#749549a320d1545a9b3258880734828ab2911e28"
+  dependencies:
+    glob "^7.1.2"
+    minimatch "^3.0.4"
+    safe-buffer "^5.1.1"
+    slash "^2.0.0"
+    through2 "^2.0.3"
+
 gulp-sass@^3.1.0:
   version "3.2.1"
   resolved "https://registry.yarnpkg.com/gulp-sass/-/gulp-sass-3.2.1.tgz#2e3688a96fd8be1c0c01340750c191b2e79fab94"
@@ -4380,7 +4390,7 @@ node-pre-gyp@^0.10.0:
     semver "^5.3.0"
     tar "^4"
 
-node-sass-glob-importer@^5.0.0-alpha.5:
+node-sass-glob-importer@^5.0.0-alpha.5, node-sass-glob-importer@^5.3.0:
   version "5.3.0"
   resolved "https://registry.yarnpkg.com/node-sass-glob-importer/-/node-sass-glob-importer-5.3.0.tgz#4524a348c0be8c85b65c3e8061456ada17c97997"
   dependencies:
@@ -5726,6 +5736,10 @@ signal-exit@^3.0.0:
 slash@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/slash/-/slash-1.0.0.tgz#c41f2f6c39fc16d1cd17ad4b5d896114ae470d55"
+
+slash@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/slash/-/slash-2.0.0.tgz#de552851a1759df3a8f206535442f5ec4ddeab44"
 
 snake-case@^2.1.0:
   version "2.1.0"

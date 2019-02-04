@@ -1,3 +1,5 @@
+var globImporter = require("node-sass-glob-importer");
+
 module.exports = {
   html        : true,
   images      : true,
@@ -5,7 +7,11 @@ module.exports = {
   static      : true,
   svgSprite   : true,
   ghPages     : true,
-  stylesheets : true,
+  stylesheets : {
+    sass: {
+      importer: globImporter()
+    }
+  },
 
   javascripts: {
     entry: {
