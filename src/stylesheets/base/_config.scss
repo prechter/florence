@@ -1,12 +1,7 @@
-@font-face {
-  font-family: 'Geomanist Regular';
-  src: url('../../fonts/geomanist-regular-webfont.woff');
-}
-
-@font-face {
-  font-family: 'Geomanist Medium';
-  src: url('../../fonts/geomanist-medium-webfont.woff');
-}
+//fonts
+$base:                  'Geomanist Regular', sans-serif;
+$base-med:              'Geomanist Medium', sans-serif;
+$serif:                 'Merriweather', serif;
 
 $colors: (
   cool-charcoal:        #252224,
@@ -24,8 +19,8 @@ $colors: (
 );
 
 $screens: (
-  sm: 'min-width: 31.25rem', // 500px
-  md: 'min-width: 45rem', // 720px
-  lg: 'min-width: 60rem', // 960px
-  xl: 'min-width: 75rem' // 1200px
+  sm:                   'min-width: 31.25rem', // 500px
+  md:                   'min-width: 45rem', // 720px
+  lg:                   'min-width: 60rem', // 960px
+  xl:                   'min-width: 75rem' // 1200px
 );

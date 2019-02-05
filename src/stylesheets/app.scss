@@ -1,4 +1,7 @@
-@import "base/*.scss";
+@import "base/fonts.scss";
+@import "base/functions.scss";
+@import "base/config.scss";
+@import "base/body.scss";
 @import "mixins/*.scss";
 @import "utility/*.scss";
 @import "blocks/*.scss";
