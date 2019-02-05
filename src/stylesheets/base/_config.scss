@@ -23,3 +23,9 @@ $colors: (
   gradient-background:  linear-gradient(#184D66 0%, #D3E7E2 100%)
 );
 
+$screens: (
+  sm: 'min-width: 31.25rem', // 500px
+  md: 'min-width: 45rem', // 720px
+  lg: 'min-width: 60rem', // 960px
+  xl: 'min-width: 75rem' // 1200px
+);

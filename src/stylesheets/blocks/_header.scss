@@ -1,16 +1,89 @@
 .header {
   background-color: color(mint-green);
+  width: 100vw;
+}
+
+.header-wrapper {
+  max-width: rem(680);
+  display: block;
+  margin: 0 auto;
+  position: relative;
+}
+
+.header__background-img {
+  background-size: cover;
+  background-repeat: no-repeat; 
+  display: inline-block;
+  position: absolute;
+}
+
+.img-1 {
+  background-image: url('../../images/Pill_Orange_Title-01.svg');
+  height: rem(75);
+  width: rem(75);
+  top: rem(-21);
+
+  @media (screen(lg)) {
+    height: rem(125);
+    width: rem(125);
+    top: rem(-38);
+  }
+}
+
+.img-2 {
+  background-image: url('../../images/3Pills_Title-01.svg');
+  height: rem(120);
+  width: rem(165);
+  top: rem(-10);
+  right: rem(-70);
+
+  @media (screen(lg)) {
+    height: rem(180);
+    width: rem(250);
+    top: rem(-10);
+    right: rem(-135);
+  }
+}
+
+.img-3 {
+  background-image: url('../../images/Pills_Purple_Title-01.svg');
+  height: rem(67);
+  width: rem(72);
+  bottom: rem(-8);
+  right: rem(-30);
+
+  @media (screen(lg)) {
+    height: rem(126);
+    width: rem(136);
+    bottom: rem(15);
+    right: rem(-150);
+  }
+}
+
+.img-4 {
+  @media (screen(lg)) {
+    background-image: url('../../images/2Pills_Mint&Beige_Title-01.svg');
+    height: rem(120);
+    width: rem(125);
+    bottom: rem(180);
+    left: rem(-160);
+  }
 }
 
 .header__title {
   font-family: 'Geomanist Medium';
   font-size: rem(11);
   letter-spacing: rem(1.5);
-  line-height: rem(37);
   text-transform: uppercase;
   color: color(emerald-green);
   margin: 0;
+  padding: rem(47) 0 rem(10) 0;
   text-align: center;
+
+  @media (screen(lg)) {
+    font-size: rem(14);
+    padding: rem(95) 0 rem(10) 0;
+  }
 }
 
 .header__img {
@@ -19,13 +92,49 @@
   box-sizing: border-box;
   margin-right: auto;
   margin-left: auto;
-  padding: 0 rem(20) 0 rem(20);
+  padding: 0 rem(20) rem(25) rem(20);
+  position: relative;
+
+  @media (screen(sm)) {
+    max-width: rem(680);
+    padding: 0 rem(20) rem(55) rem(20);
+  }
 }
 
 .header__nav {
+  display: flex;
+  justify-content: center;
+}
+
+.header__nav-list {
   display: none;
 
-  
+  @media (screen(lg)) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+    font-family: 'Geomanist Medium';
+    width: rem(538);
+    height: rem(41);
+    padding: 0;
+    background-image: url('../../images/mask_pill_shape.svg');
+    background-size: cover;
+    background-repeat: no-repeat; 
+    margin: 0 0 rem(70) 0;
+
+    li {
+      padding: 0 rem(15) rem(3) rem(15);
+    }
+
+    a {
+      color: color(mint-green);
+      font-size: rem(14);
+      text-decoration: none;
+      text-transform: uppercase;
+    }
+    
+  }
 }
 
 

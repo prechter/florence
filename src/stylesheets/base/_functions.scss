@@ -1,8 +1,15 @@
+//for use with color map
 @function color($key) {
   @return map-get($colors, $key );
 }
 
+//rem conversion
 @function rem($fontSize) {
   $remSize: $fontSize / 16;
   @return #{$remSize}rem;
+}
+
+//for use with breakpoint map
+@function screen($key) {
+  @return map-get($screens, $key);
 }
