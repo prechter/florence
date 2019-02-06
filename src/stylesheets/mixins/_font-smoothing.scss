@@ -1,11 +1,5 @@
-@mixin font-smoothing-light-on-dark() {
+@mixin font-smoothing {
     // on
     -webkit-font-smoothing : antialiased;
     -moz-osx-font-smoothing: grayscale;
-}
-
-@mixin font-smoothing-dark-on-light() {
-    // off
-    -webkit-font-smoothing : subpixel-antialiased;
-    -moz-osx-font-smoothing: auto;
 }

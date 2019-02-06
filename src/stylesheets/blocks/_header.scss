@@ -112,32 +112,41 @@
 
   @media (screen(lg)) {
     align-items: center;
-    background-image: url('../../images/mask_pill_shape.svg');
-    background-repeat: no-repeat; 
-    background-size: cover;
     display: flex;
     font-family: $base-med;
     height: rem(41);
-    justify-content: center;
     list-style-type: none;
     margin: 0 0 rem(70) 0;
     padding: 0;
-    width: rem(538);
 
     li {
-      padding: 0 rem(15) rem(3) rem(15);
+      background-color: color(urSuchAPill-pink);
+      box-shadow: inset 0 rem(-21) 0 rem(-2) color(urSuchAPill-dark-pink);
+      padding: 0 rem(28) 0 rem(28);
+      transition: 0.3s;
+      
+      &:hover {
+        background-color: color(deep-blue);
+        box-shadow: inset 0 rem(-21) 0 rem(-2) color(deep-dark-blue);
+      }
+    }
+
+    li:first-child {
+      border-radius: rem(100) 0 0 rem(100);
+    }
+
+    li:last-child {
+      border-radius: 0 rem(100) rem(100) 0;
     }
 
     a {
-      @include font-smoothing-light-on-dark;
+      @include font-smoothing;
       color: color(mint-green);
+      display: block;
       font-size: rem(14);
+      line-height: rem(41);
       text-decoration: none;
       text-transform: uppercase;
-    }
-    
+    } 
   }
 }
-
-
-
