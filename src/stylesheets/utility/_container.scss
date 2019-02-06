@@ -1,0 +1,22 @@
+.container {
+  display: block;
+  margin: 0 auto;
+  position: relative;
+
+  &.-lg-width {
+    max-width: rem(1030);
+  }
+
+  &.-md-width {
+    max-width: rem(870);
+  }
+
+  &.-xl-width {
+    max-width: rem(1190);
+  }
+
+  &.-xs-width {
+    max-width: rem(610);
+  }
+
+}
