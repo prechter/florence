@@ -10,73 +10,74 @@
   position: relative;
 }
 
-.header__background-img {
+.header__pill-img {
   background-repeat: no-repeat; 
   background-size: cover;
   display: inline-block;
   position: absolute;
-}
 
-.img-1 {
-  background-image: url('../../images/Pill_Orange_Title-01.svg');
-  height: rem(75);
-  top: rem(-21);
-  width: rem(75);
+  &.pill-top-left {
+    background-image: url('../../images/Pill_Orange_Title-01.svg');
+    height: rem(75);
+    top: rem(-21);
+    width: rem(75);
 
-  @media (screen(lg)) {
-    height: rem(125);
-    top: rem(-38);
-    width: rem(125);
+    @media (screen(lg)) {
+      height: rem(125);
+      top: rem(-38);
+      width: rem(125);
+    }
   }
-}
 
-.img-2 {
-  background-image: url('../../images/3Pills_Title-01.svg');
-  height: rem(120);
-  right: rem(-70);
-  top: rem(-10);
-  width: rem(165);
-
-  @media (screen(lg)) {
-    height: rem(180);
-    right: rem(-135);
-    top: rem(-10);
-    width: rem(250);
-  }
-}
-
-.img-3 {
-  background-image: url('../../images/Pills_Purple_Title-01.svg');
-  bottom: rem(-8);
-  height: rem(67);
-  right: rem(-40);
-  width: rem(72);
-
-  @media (screen(lg)) {
-    bottom: rem(15);
-    height: rem(126);
-    right: rem(-150);
-    width: rem(136);
-  }
-}
-
-.img-4 {
-  @media (screen(lg)) {
-    background-image: url('../../images/2Pills_Mint&Beige_Title-01.svg');
-    bottom: rem(180);
+  &.pill-top-right {
+    background-image: url('../../images/3Pills_Title-01.svg');
     height: rem(120);
-    left: rem(-160);
-    width: rem(125);
+    right: rem(-70);
+    top: rem(-10);
+    width: rem(165);
+
+    @media (screen(lg)) {
+      height: rem(180);
+      right: rem(-135);
+      top: rem(-10);
+      width: rem(250);
+    }
+  }
+
+  &.pill-bottom-right {
+    background-image: url('../../images/Pills_Purple_Title-01.svg');
+    bottom: rem(-8);
+    height: rem(67);
+    right: rem(-40);
+    width: rem(72);
+
+    @media (screen(lg)) {
+      bottom: rem(15);
+      height: rem(126);
+      right: rem(-150);
+      width: rem(136);
+    }
+  }
+
+  &.pill-bottom-left {
+    @media (screen(lg)) {
+      background-image: url('../../images/2Pills_Mint&Beige_Title-01.svg');
+      bottom: rem(180);
+      height: rem(120);
+      left: rem(-160);
+      width: rem(125);
+    }
   }
 }
+
 
 .header__title {
   color: color(emerald-green);
   font-family: $base-med;
   font-size: rem(11);
   font-weight: lighter;
-  letter-spacing: rem(2.5);
-  margin: 0;
+  letter-spacing: 0.2em;
+  margin-top: 0;
   padding: rem(47) 0 rem(10) 0;
   text-align: center;
   text-transform: uppercase;
@@ -95,6 +96,7 @@
   padding: 0 rem(20) rem(25) rem(20);
   position: relative;
   width: 100%;
+  max-width: 100%;
 
   @media (screen(sm)) {
     max-width: rem(680);
