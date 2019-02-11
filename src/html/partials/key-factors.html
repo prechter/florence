@@ -5,17 +5,16 @@
     <h2 class="sm-title">Why People Don't Adhere</h2>
     <p class="lg-text">A myriad of factors conspire to prevent people from sticking to their treatment programs. But a few are most telling.</p>
 
-    <!-- For mobile only -->
     <div class="factors-section__human-figure">
-      <div class="tag-list__btn -inactive -gear"></div>
-      <div class="tag-list__btn -inactive -heart"></div>
-      <div class="tag-list__btn -inactive -dollar"></div>
-      <div class="tag-list__btn -inactive -tally"></div>
+      <button class="tag-list__btn -gear" aria-label="Show Comprehension Factors"></button>
+      <button class="tag-list__btn -heart -alt" aria-label="Show Denial Factors"></button>
+      <button class="tag-list__btn -dollar" aria-label="Show Cost Factors"></button>
+      <button class="tag-list__btn -tally -alt" aria-label="Show Complexity Factors"></button>
     </div>
 
     <ul class="tag-list">
       <li class="tag-list__item">
-        <button class="tag-list__btn -gear" aria-label="Show Comprehension Factors"></button>
+        <div class="tag-list__btn -gear -inactive"></div>
         <div class="tag-list__text-wrapper">
           <h3 class="sm-list-title -orange">Comprehension</h3>
           <p class="sm-sans-serif-text">“All of that medical jargon doesn’t make much sense to me but I don’t want to bother the doctor with my silly questions.”</p>
@@ -23,7 +22,7 @@
       </li>
 
       <li class="tag-list__item">
-        <button class="tag-list__btn -alt -heart" aria-label="Show Denial Factors"></button>
+        <div class="tag-list__btn -heart -inactive"></div>
         <div class="tag-list__text-wrapper">
           <h3 class="sm-list-title -orange">Denial</h3>
           <p class="sm-sans-serif-text">“I feel just fine. I don’t know why that doctor thinks I’m sick. Why would I take medicine that I don’t need?”</p>
@@ -31,7 +30,7 @@
       </li>
 
       <li class="tag-list__item">
-        <button class="tag-list__btn -dollar" aria-label="Show Cost Factors"></button>
+        <div class="tag-list__btn -dollar -inactive"></div>
         <div class="tag-list__text-wrapper">
           <h3 class="sm-list-title -orange">Cost</h3>
           <p class="sm-sans-serif-text">“I took my prescription to the pharmacy but they said it would cost several hundred dollars! I just couldn’t afford it.”</p>
@@ -39,7 +38,7 @@
       </li>
 
       <li class="tag-list__item">
-        <button class="tag-list__btn -alt -tally" aria-label="Show Complexity Factors"></button>
+        <div class="tag-list__btn -tally -inactive"></div>
         <div class="tag-list__text-wrapper">
           <h3 class="sm-list-title -orange">Complexity</h3>
           <p class="sm-sans-serif-text">“Taking 15 medications every day is tough. Especially since they all have different instructions. How am I supposed to keep track of everything?”</p>
