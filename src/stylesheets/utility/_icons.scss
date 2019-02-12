@@ -1,0 +1,40 @@
+.tag-list__icon,
+.tag-list__btn {
+  align-items: center;
+  background-color: color(yellow);
+  border-radius: 50%;
+  border: solid rem(4.5) color(white);
+  box-shadow: 0 0 0 rem(6) #FFFFFF90;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+
+  svg {
+    display: block;
+    left: 50%;
+    margin: auto;
+    padding: 0;
+  }
+}
+
+.tag-list__btn {
+  box-sizing: content-box;
+  height: rem(28);
+  padding: 0;
+  position: absolute;
+  top: rem(-12);
+  width: rem(28);
+
+  svg {
+    height: rem(18);
+  }
+}
+
+.tag-list__icon {
+  height: rem(20);
+  width: rem(20);
+
+  svg {
+    height: rem(12);
+  }
+}
