@@ -1,0 +1,52 @@
+.factors-section {
+  background-color: color(mint-green);
+}
+
+.factors-section__diagram {
+  background-image: url('../../images/splatter_background.png');
+  background-size: rem(450);
+  background-repeat: no-repeat;
+  background-position: center;
+  height: rem(315);
+  width: rem(350);
+  position: relative;
+  display: block;
+  margin: auto;
+
+  .human-figure {
+    background-image: url('../../images/human_figure.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: rem(325);
+    width: rem(125);
+    position: absolute;
+    top: 62%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .-gear {
+    top: 8%;
+    left: 51%;
+  }
+
+  .-heart {
+    top: 32%;
+    left: 47%;
+  }
+
+  .-dollar {
+    top: 53%;
+    left: 55%;
+  }
+
+  .-tally {
+    top: 60%;
+    left: 31%;
+  }
+}
+
+.list-wrapper {
+  margin-top: rem(-65);
+}

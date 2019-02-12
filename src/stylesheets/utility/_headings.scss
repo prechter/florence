@@ -1,8 +1,23 @@
 .sm-title {
   color: color(emerald-green);
-  font-family: 'Geomanist Regular';
+  font-family: $base;
   font-size: rem(11);
   letter-spacing: 0.12em;
   text-align: center;
   text-transform: uppercase;
+}
+
+.sm-list-title {
+  font-family: $base-med;
+  font-size: rem(13);
+  font-weight: lighter;
+  letter-spacing: 0.05em;
+  line-height: rem(20);
+  margin: rem(30) 0 0 0;
+  text-align: center;
+  text-transform: uppercase;
+
+  &.-orange {
+    color: color(orange);
+  }
 }
