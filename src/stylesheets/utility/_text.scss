@@ -1,0 +1,16 @@
+.lg-text {
+  font-family: $serif;
+  color: color(emerald-green);
+  font-size: rem(18);
+  margin-top: 0;
+  text-align: center;
+}
+
+.sm-sans-serif-text {
+  color: color(warm-charcoal);
+  font-size: rem(13);
+  letter-spacing: 0.05em;
+  line-height: rem(20);
+  margin: 0;
+  text-align: center;
+}

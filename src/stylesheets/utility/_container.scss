@@ -2,6 +2,11 @@
   display: block;
   margin: 0 auto;
   position: relative;
+  padding: 0 rem(18) 0 rem(18);
+
+  @media (screen(lg)) {
+    padding: 0;
+  }
 
   &.-lg-width {
     max-width: rem(1030);
@@ -18,5 +23,4 @@
   &.-xs-width {
     max-width: rem(610);
   }
-
 }

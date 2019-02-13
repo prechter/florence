@@ -1,0 +1,41 @@
+.behind-scenes-section {
+  background-color: color(mint-green);
+  padding-top: rem(85);
+}
+
+.behind-scenes-section__diagram {
+  background-image: url('../../images/Florence_NoCape-01.svg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: rem(255);
+  width: rem(155);
+  position: relative;
+  display: block;
+  margin: 0 auto rem(35) auto;
+
+  .-book {
+    top: 3%;
+    left: 20%;
+  }
+
+  .-gear {
+    top: 13%;
+    left: 69%;
+  }
+
+  .-comment {
+    top: 29%;
+    left: 17%;
+  }
+
+  .-heart {
+    top: 49%;
+    left: 62%;
+  }
+
+  .-link {
+    top: 66%;
+    left: 5%;
+  }
+}
