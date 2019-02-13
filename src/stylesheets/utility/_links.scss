@@ -1,0 +1,15 @@
+a, sup {
+  color: color(coral-pink);
+}
+
+sup {
+  vertical-align: top;
+  font-size: rem(11);
+  border-bottom: solid rem(1) color(coral-pink);
+}
+
+.problem-section {
+  a {
+    text-decoration: none;
+  }
+}

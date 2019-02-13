@@ -1,4 +1,59 @@
 .problem-section {
   background-color: color(mint-green);
+
+  .-lg-width {
+    background-color: color(white);
+    padding-top: rem(40);
+  }
+
+  .lg-text {
+    color: color(warm-charcoal);
+  }
+
+  .problem-section__end {
+    display: flex;
+    justify-content: flex-end;
+    margin: rem(18) 0 rem(30) 0;
+    position: relative;
+  }
+
+  .pill-bottles {
+    background-image: url('../../images/Pill_Bottles.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: rem(200);
+    left: rem(-127);
+    position: absolute;
+    top: rem(-42);
+    width: rem(200);
+    
+  }
+
+  .problem-section__end__quote {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 68vw;
+
+    @media (screen(sm)) {
+      width: 75vw;
+    }
+
+    .lg-text {
+      color: color(orange);
+      font-size: rem(13);
+      margin: 0;
+    }
+    
+    &:nth-child(2) {
+      color: color(warm-charcoal);
+      font-family: $base-med;
+      font-size: rem(13);
+      letter-spacing: 0.06em;
+      text-align: center;
+    }
+  }
+
 }
 

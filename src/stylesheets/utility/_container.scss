@@ -1,15 +1,22 @@
 .container {
+  box-sizing: border-box;
   display: block;
   margin: 0 auto;
-  position: relative;
   padding: 0 rem(18) 0 rem(18);
-
-  @media (screen(lg)) {
-    padding: 0;
-  }
+  position: relative;
 
   &.-lg-width {
-    max-width: rem(1030);
+
+    @media (screen(lg)) {
+      width: rem(900);
+      padding: 0 rem(80) 0 rem(80);
+    }
+
+    @media (screen(xl)) {
+      width: rem(1030);
+      padding: 0 rem(100) 0 rem(100);
+    }
+
   }
 
   &.-md-width {
