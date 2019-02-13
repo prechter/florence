@@ -14,17 +14,30 @@
   display: block;
   margin: auto;
 
+  @media (screen(lg)) {
+    height: rem(800);
+    width: rem(1000);
+    background-size: rem(1000);
+    margin: rem(-40) auto auto auto;
+  }
+
   .human-figure {
     background-image: url('../../images/human_figure.png');
-    background-size: contain;
-    background-repeat: no-repeat;
     background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
     height: rem(325);
-    width: rem(125);
+    left: 50%;
     position: absolute;
     top: 62%;
-    left: 50%;
     transform: translate(-50%, -50%);
+    width: rem(125);
+
+    @media (screen(lg)) {
+      height: rem(775);
+      width: rem(300);
+      top: 66%;
+    }
   }
 
   .-gear {
