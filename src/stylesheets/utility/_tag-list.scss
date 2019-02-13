@@ -96,3 +96,78 @@
     }
   }
 }
+
+.behind-scenes-section {
+  
+  @media (screen(lg)) {
+    .tag-list__item {
+      width: rem(400);
+      
+      .-orange,
+      .sm-sans-serif-text {
+        font-size: rem(13);
+      }
+
+      &:nth-child(1) {
+        top: 4%;
+        left: -29%;
+
+        .-book {
+          top: 29%;
+          left: 93%;
+        }
+      }
+
+      &:nth-child(2) {
+        top: -16%;
+        left: 29%;
+
+        .-gear {
+          top: 33%;
+          left: -8%;
+        }
+      }
+
+      &:nth-child(3) {
+        top: -28%;
+        left: -29%;
+
+        .-comment {
+          top: 29%;
+          left: 93%;
+        }
+      }
+
+      &:nth-child(4) {
+        top: -45.5%;
+        left: 29%;
+
+        .-heart {
+          top: 27%;
+          left: -8%;
+        }
+      }
+
+      &:nth-child(5) {
+        top: -57.5%;
+        left: -29%;
+
+        .-link {
+          top: 30%;
+          left: 93%;
+        }
+      }
+    }
+  }
+
+  @media (screen(xl)) {
+    .tag-list__item {
+      width: rem(500);
+      
+      .-orange,
+      .sm-sans-serif-text {
+        font-size: rem(16);
+      }
+    }
+  }
+}

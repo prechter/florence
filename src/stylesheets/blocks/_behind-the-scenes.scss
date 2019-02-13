@@ -14,6 +14,13 @@
   display: block;
   margin: 0 auto rem(35) auto;
 
+  @media (screen(lg)) {
+    height: rem(800);
+    width: rem(1000);
+    background-size: rem(350);
+    margin: rem(-40) auto auto auto;
+  }
+
   .-book {
     top: 3%;
     left: 20%;
