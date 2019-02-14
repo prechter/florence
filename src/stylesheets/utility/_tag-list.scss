@@ -149,6 +149,10 @@
       .sm-sans-serif-text {
         font-size: rem(16);
       }
+
+      &:nth-child(5) {
+        transform: translateY(9%);
+      }
     }
   }
 }
