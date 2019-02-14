@@ -3,3 +3,9 @@ body {
   font-size: rem(18);
   margin: 0;
 }
+
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+}
