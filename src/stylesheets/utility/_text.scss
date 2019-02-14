@@ -4,6 +4,10 @@
   font-size: rem(18);
   margin-top: 0;
   text-align: center;
+
+  @media (screen(lg)) {
+    font-size: rem(28);
+  }
 }
 
 .sm-sans-serif-text {
@@ -13,4 +17,8 @@
   line-height: rem(20);
   margin: 0;
   text-align: center;
+
+  @media (screen(lg)) {
+    font-size: rem(16);
+  }
 }

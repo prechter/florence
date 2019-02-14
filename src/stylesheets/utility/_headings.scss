@@ -1,10 +1,16 @@
 .sm-title {
   color: color(emerald-green);
-  font-family: $base;
+  font-family: $base-med;
   font-size: rem(11);
+  font-weight: lighter;
   letter-spacing: 0.12em;
   text-align: center;
   text-transform: uppercase;
+
+  @media (screen(lg)) {
+    font-size: rem(14);
+    letter-spacing: 0.2em;
+  }
 }
 
 .sm-list-title {
@@ -19,5 +25,10 @@
 
   &.-orange {
     color: color(orange);
+
+    @media (screen(lg)) {
+      font-size: rem(16);
+      margin: 0 0 rem(3) 0;
+    }
   }
 }

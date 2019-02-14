@@ -4,10 +4,12 @@
   background-color: color(yellow);
   border-radius: 50%;
   border: solid rem(4.5) color(white);
-  box-shadow: 0 0 0 rem(6) #FFFFFF90;
+  box-shadow: 0 0 0 rem(6) rgba(255, 255, 255, 0.5);
   display: flex;
   justify-content: center;
   position: absolute;
+
+  //combine into one class with modifier for smaller icon
 
   svg {
     display: block;
@@ -15,18 +17,30 @@
     margin: auto;
     padding: 0;
   }
+
+  @media (screen(lg)) {
+    border: none;
+    box-shadow: none;
+  }
 }
 
 .tag-list__btn {
-  box-sizing: content-box;
-  height: rem(28);
+  height: rem(36);
   padding: 0;
-  position: absolute;
   top: rem(-12);
-  width: rem(28);
+  width: rem(36);
 
   svg {
     height: rem(18);
+  }
+
+  @media (screen(lg)) {
+    width: rem(75);
+    height: rem(75);
+
+    svg {
+      height: rem(45);
+    }
   }
 }
 
@@ -36,5 +50,14 @@
 
   svg {
     height: rem(12);
+  }
+
+  @media (screen(lg)) {
+    height: 0;
+    width: 0;
+
+    svg {
+      height: 0;
+    }
   }
 }

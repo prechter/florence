@@ -1,6 +1,13 @@
 .factors-section {
   background-color: color(mint-green);
   padding-top: rem(85);
+  padding-bottom: rem(50);
+  position: relative;
+  z-index: 0;
+
+  @media (screen(lg)) {
+    padding-bottom: 0;
+  }
 }
 
 .factors-section__diagram {
@@ -10,44 +17,55 @@
   background-position: center;
   height: rem(315);
   width: rem(350);
-  position: relative;
-  display: block;
+  position: absolute;
+  z-index: -1;
   margin: auto;
+  left: 0;
+  right: 0;
+
+  @media (screen(lg)) {
+    background-size: rem(1000);
+    height: rem(800);
+    margin: rem(-40) auto auto;
+    width: rem(1000);
+  }
 
   .human-figure {
     background-image: url('../../images/human_figure.png');
-    background-size: contain;
-    background-repeat: no-repeat;
     background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
     height: rem(325);
-    width: rem(125);
+    left: 50%;
     position: absolute;
     top: 62%;
-    left: 50%;
     transform: translate(-50%, -50%);
+    width: rem(125);
+
+    @media (screen(lg)) {
+      height: rem(775);
+      width: rem(300);
+      top: 66%;
+    }
   }
 
-  .-gear {
+  div.-gear {
     top: 8%;
     left: 51%;
   }
 
-  .-heart {
+  div.-heart {
     top: 32%;
     left: 47%;
   }
 
-  .-dollar {
+  div.-dollar {
     top: 53%;
     left: 55%;
   }
 
-  .-tally {
+  div.-tally {
     top: 60%;
     left: 31%;
   }
-}
-
-.list-wrapper {
-  margin-top: rem(-65);
 }

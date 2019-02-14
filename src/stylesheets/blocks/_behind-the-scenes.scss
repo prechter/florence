@@ -1,6 +1,9 @@
 .behind-scenes-section {
   background-color: color(mint-green);
   padding-top: rem(85);
+  padding-bottom: rem(50);
+  position: relative;
+  z-index: 0;
 }
 
 .behind-scenes-section__diagram {
@@ -10,31 +13,40 @@
   background-position: center;
   height: rem(255);
   width: rem(155);
-  position: relative;
-  display: block;
-  margin: 0 auto rem(35) auto;
+  position: absolute;
+  z-index: -1;
+  margin: auto;
+  left: 0;
+  right: 0;
 
-  .-book {
+  @media (screen(lg)) {
+    background-size: rem(350);
+    height: rem(800);
+    margin: rem(-40) auto auto;
+    width: rem(1000);
+  }
+
+  div.-book {
     top: 3%;
     left: 20%;
   }
 
-  .-gear {
+  div.-gear {
     top: 13%;
     left: 69%;
   }
 
-  .-comment {
+  div.-comment {
     top: 29%;
     left: 17%;
   }
 
-  .-heart {
+  div.-heart {
     top: 49%;
     left: 62%;
   }
 
-  .-link {
+  div.-link {
     top: 66%;
     left: 5%;
   }
