@@ -1,0 +1,31 @@
+.question-section {
+  background-color: color(mint-green);
+}
+
+.wrapper-title__question {
+  .sm-title {
+    
+  }
+
+  .lg-text {
+    text-align: left;
+  }
+}
+
+.question-section__mobile-phone {
+  background-image: url('../../images/SmartPhone_Question-01.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: rem(220);
+  width: rem(150);
+  margin: rem(-35) rem(-75) auto 0;
+  float: right;
+}
+
+.question-section__content {
+  .sm-sans-serif-text {
+    text-align: center;
+    padding-bottom: rem(18);
+  }
+}

@@ -3,12 +3,19 @@ a, sup {
 }
 
 sup {
-  vertical-align: top;
-  font-size: rem(11);
   border-bottom: solid rem(1) color(coral-pink);
+  font-family: $base;
+  font-size: rem(11);
+  vertical-align: top;
 }
 
 .problem-section {
+  a {
+    text-decoration: none;
+  }
+}
+
+.question-section {
   a {
     text-decoration: none;
   }
