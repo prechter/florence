@@ -75,9 +75,11 @@
       color: color(orange);
       font-size: rem(13);
       margin: 0;
+      line-height: rem(20);
 
       @media (screen(lg)) {
         font-size: rem(18);
+        line-height: rem(30);
       }
     }
     

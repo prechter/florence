@@ -20,5 +20,20 @@
 
   @media (screen(lg)) {
     font-size: rem(18);
+    line-height: rem(32);
+  }
+}
+
+.sm-serif-text {
+  color: color(warm-charcoal);
+  font-family: $serif;
+  font-size: rem(14);
+  line-height: rem(25);
+  text-align: center;
+
+  @media (screen(lg)) {
+    font-size: rem(18);
+    text-align: left;
+    line-height: rem(32);
   }
 }
