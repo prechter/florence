@@ -1,5 +1,6 @@
 .tag-list {
   list-style-type: none;
+  margin: 0;
   padding: 0;
   position: relative;
 }
@@ -28,7 +29,7 @@
     .-orange,
     .sm-sans-serif-text {
       text-align: left;
-      line-height: rem(20);
+      line-height: 1.1;
     }
 
     &.-alt {

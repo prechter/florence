@@ -3,7 +3,6 @@
   padding-bottom: rem(85);
   
   @media (screen(lg)) {
-    margin-top: rem(-18);
     padding-bottom: rem(170);
   }
 }
@@ -28,27 +27,22 @@
   margin: rem(-65) rem(-75) 0 0;
   width: rem(150);
 
-  @media (screen(md)) {
-    height: rem(300);
-    width: rem(200);
+  &.--mobile-version {
+    @media (screen(md)) {
+      height: rem(300);
+      width: rem(200);
+    }
+  
+    @media (screen(lg)) {
+      display: none;
+    }
   }
 
-  @media (screen(lg)) {
-    background: none;
-    height: 0;
-    width: 0;
-  }
-
-  &.--toggle-img {
-    background: none;
-    height: 0;
-    width: 0;
+  &.--desktop-version {
+    display: none;
 
     @media (screen(lg)) {
-      background-image: url('../../images/SmartPhone_Question-01.svg');
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: contain;
+      display: inline-block;
       height: rem(500);
       margin: rem(-15) rem(-75) 0 0;
       width: rem(250);

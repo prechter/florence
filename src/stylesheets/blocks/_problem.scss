@@ -25,8 +25,7 @@
 
   .sm-sans-serif-text {
     @media (screen(lg)) {
-      padding-bottom: rem(20);
-      padding-top: rem(20);
+      margin-bottom: rem(28);
       text-align: left;
     }
   }
@@ -61,9 +60,6 @@
   }
 
   .problem-section__end__quote {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     width: 68vw;
 
     @media (screen(sm)) {
@@ -75,11 +71,12 @@
       color: color(orange);
       font-size: rem(13);
       margin: 0;
-      line-height: rem(20);
+      line-height: 1.5;
+      text-align: center;
 
       @media (screen(lg)) {
         font-size: rem(18);
-        line-height: rem(30);
+        line-height: 1.67;
       }
     }
     
