@@ -4,6 +4,7 @@
   font-size: rem(11);
   font-weight: lighter;
   letter-spacing: 0.12em;
+  margin-top: 0;
   text-align: center;
   text-transform: uppercase;
 
@@ -18,7 +19,7 @@
   font-size: rem(13);
   font-weight: lighter;
   letter-spacing: 0.05em;
-  line-height: rem(20);
+  line-height: 1.54;
   margin: rem(30) 0 0 0;
   text-align: center;
   text-transform: uppercase;
@@ -29,6 +30,16 @@
     @media (screen(lg)) {
       font-size: rem(16);
       margin: 0 0 rem(3) 0;
+    }
+  }
+
+  &.-blue {
+    color: color(teal);
+    font-size: rem(18);
+
+    @media (screen(lg)) {
+      font-size: rem(20);
+      text-align: left;
     }
   }
 }

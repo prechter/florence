@@ -1,3 +1,65 @@
+.concept-section {
+  background-image: color(gradient-background);
+  padding-top: rem(125);
+  position: relative;
+
+  .-lg-width {
+    padding: 0;
+  }
+}
+
+.concept-section__character-img {
+  background-image: url('../../images/Florence_IconPrimary-01.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: rem(150);
+  width: rem(140);
+  position: absolute;
+  right: calc(50vw - 88px);
+  top: rem(-50);
+}
+
+.concept-section__intro {
+  .sm-title,
+  .lg-text,
+  .sm-sans-serif-text {
+    color: color(white);
+    @include font-smoothing;
+  }
+
+  .lg-text {
+    font-size: rem(30);
+    margin-bottom: rem(25);
+  }
+
+  .sm-sans-serif-text {
+    padding-bottom: rem(25);
+  }
+}
+
+.concept-section__list {
+  list-style: none;
+  padding: 0;
+
+  .concept-section__list__item {
+    background-color: color(white);
+    padding: rem(20);
+    margin-top: rem(120);
+
+    &:nth-child(2),
+    &:nth-child(3),
+    &:nth-child(4),
+    &:nth-child(5),
+    &:nth-child(7) {
+      display: none;
+    }
+  }
+}
+
 .concept-section__list__item__img {
-  max-width: 200px;
+  width: 80vw;
+  display: block;
+  margin: 0 auto;
+  max-width: rem(340);
 }

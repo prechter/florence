@@ -1,4 +1,93 @@
 .problem-section {
   background-color: color(mint-green);
+
+  @media (screen(lg)) {
+    padding-bottom: rem(75);
+  }
+
+  .-lg-width {
+    background-color: color(white);
+    padding-top: rem(40);
+    padding-bottom: rem(20);
+
+    @media (screen(lg)) {
+      border-radius: rem(4);
+    }
+  }
+
+  .lg-text {
+    color: color(warm-charcoal);
+
+    @media (screen(lg)) {
+      text-align: left;
+    }
+  }
+
+  .sm-sans-serif-text {
+    @media (screen(lg)) {
+      margin-bottom: rem(28);
+      text-align: left;
+    }
+  }
+
+  .problem-section__end {
+    display: flex;
+    justify-content: flex-end;
+    margin: rem(18) 0 rem(30) 0;
+    position: relative;
+  }
+
+  .pill-bottles {
+    background-image: url('../../images/Pill_Bottles.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: rem(200);
+    left: rem(-127);
+    position: absolute;
+    top: rem(-42);
+    width: rem(200);
+    z-index: 10;
+
+    @media (screen(lg)) {
+      height: rem(325);
+      left: 0;
+      margin: rem(-70) auto rem(-10) auto;
+      top: 0;
+      transform: translateX(-55%);
+      width: rem(325);
+    }
+  }
+
+  .problem-section__end__quote {
+    width: 68vw;
+
+    @media (screen(sm)) {
+      width: 75vw;
+      max-width: rem(590);
+    }
+
+    .lg-text {
+      color: color(orange);
+      font-size: rem(13);
+      margin: 0;
+      line-height: 1.5;
+      text-align: center;
+
+      @media (screen(lg)) {
+        font-size: rem(18);
+        line-height: 1.67;
+      }
+    }
+    
+    &:nth-child(2) {
+      color: color(warm-charcoal);
+      font-family: $base-med;
+      font-size: rem(13);
+      letter-spacing: 0.06em;
+      text-align: center;
+    }
+  }
+
 }
 

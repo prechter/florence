@@ -1,0 +1,62 @@
+.question-section {
+  background-color: color(mint-green);
+  padding-bottom: rem(85);
+  
+  @media (screen(lg)) {
+    padding-bottom: rem(170);
+  }
+}
+
+.wrapper-title__question {
+  .lg-text {
+    text-align: left;
+
+    @media (screen(lg)) {
+      text-align: center;
+    }
+  }
+}
+
+.question-section__mobile-phone {
+  background-image: url('../../images/SmartPhone_Question-01.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  float: right;
+  height: rem(220);
+  margin: rem(-65) rem(-75) 0 0;
+  width: rem(150);
+
+  &.--mobile-version {
+    @media (screen(md)) {
+      height: rem(300);
+      width: rem(200);
+    }
+  
+    @media (screen(lg)) {
+      display: none;
+    }
+  }
+
+  &.--desktop-version {
+    display: none;
+
+    @media (screen(lg)) {
+      display: inline-block;
+      height: rem(500);
+      margin: rem(-15) rem(-75) 0 0;
+      width: rem(250);
+    }
+  }
+}
+
+.question-section__content {
+  .sm-sans-serif-text {
+    padding-bottom: rem(18);
+    text-align: center;
+
+    @media (screen(lg)) {
+      text-align: left;
+    }
+  }
+}
