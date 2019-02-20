@@ -14,10 +14,10 @@
   background-repeat: no-repeat;
   background-size: contain;
   height: rem(150);
-  width: rem(140);
   position: absolute;
   right: calc(50vw - 88px);
   top: rem(-50);
+  width: rem(140);
 }
 
 .concept-section__intro {
@@ -31,10 +31,18 @@
   .lg-text {
     font-size: rem(30);
     margin-bottom: 0;
+
+    @media (screen(lg)) {
+      font-size: rem(60);
+    }
   }
 
   .sm-sans-serif-text {
     padding-top: rem(25);
+
+    @media (screen(lg)) {
+      text-align: left;
+    }
   }
 }
 
@@ -50,12 +58,26 @@
     content: '';
     left: 50%;
     position: absolute;
+    z-index: 1;
+  }
+
+  :after {
+    @media (screen(lg)) {
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+      content: '';
+      position: absolute;
+      z-index: 0;
+    }
   }
   
   .concept-section__list__item {
+    align-items: center;
     background-color: color(white);
-    padding: rem(20);
+    display: block;
     margin-top: rem(120);
+    padding: rem(20);
     position: relative;
     
     &:nth-child(2),
@@ -68,37 +90,178 @@
 
     @media (screen(lg)) {
       border-radius: rem(5);
+      display: flex;
+      flex-direction: row;
+      height: rem(510);
+      justify-content: space-between;
+      margin-top: rem(120);
+      padding: rem(20);
+      padding: rem(85) rem(100);
+      position: relative;
   
       &:nth-child(2),
       &:nth-child(3),
       &:nth-child(4),
       &:nth-child(5),
       &:nth-child(7) {
-        display: block;
+        align-items: center;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+      }
+
+      .concept-section__list__item__text {
+        width: rem(410);
+        z-index: 1;
       }
     }
   }
 }
 
-.--coffee:before {
-  background-image: url('../../images/CoffeeMug_TheConcept-01.svg');
-  height: rem(85);
-  top: rem(-68);
-  width: rem(90);
-  margin-left: rem(-45);
-}
-
-.--good-job:before {
-  background-image: url('../../images/Florence_GreatJob-01.svg');
-  height: rem(85);
-  top: rem(-85);
-  width: rem(180);
-  margin-left: rem(-90);
-}
-
 .concept-section__list__item__img {
-  width: 80vw;
   display: block;
   margin: 0 auto;
   max-width: rem(340);
+  width: 80vw;
+
+  @media (screen(lg)) {
+    display: inline-block;
+    margin: 0;
+  }
 }
+
+.--coffee:before {
+  background-image: url('../../images/CoffeeMug_TheConcept-01.svg');
+  height: rem(90);
+  margin-left: rem(-45);
+  top: rem(-68);
+  width: rem(85);
+
+  @media (screen(lg)) {
+    height: rem(174);
+    left: 0;
+    margin-left: rem(225);
+    top: rem(382);
+    width: rem(162);
+  }
+}
+
+.--coffee:after {
+  background-image: url('../../images/Yellow-Splatter-Bkgrd.svg');
+  bottom: 0;
+  height: rem(126);
+  margin-left: rem(50);
+  width: rem(312);
+}
+
+.--pill-bottle:before {
+  background-image: url('../../images/Bottle_Yellow_Foreground_IntroSection-01.svg');
+  height: rem(137);
+  left: 0;
+  margin-left: rem(241);
+  top: rem(382);
+  width: rem(100);
+  z-index: 1;
+}
+
+.--pill-bottle:after {
+  background-image: url('../../images/Yellow-Splatter-Bkgrd.svg');
+  bottom: 0;
+  height: rem(126);
+  margin-left: rem(50);
+  width: rem(312);
+}
+
+.--thermometer:before {
+  background-image: url('../../images/Thermometer_CheckUp-01.svg');
+  height: rem(191);
+  margin-left: rem(-85);
+  top: rem(-58);
+  width: rem(120);
+}
+
+.--thermometer:after {
+  background-image: url('../../images/SplatterBkrgd_Lilac.svg');
+  height: rem(154);
+  margin-left: rem(206);
+  top: 0;
+  width: rem(360);
+}
+
+.--pill-box:before {
+  background-image: url('../../images/BoxPills_Remember-01.svg');
+  height: rem(154);
+  left: 0;
+  margin-left: rem(108);
+  top: rem(-32);
+  width: rem(460);
+}
+
+.--pill-box:after {
+  background-image: url('../../images/SplatterBkrgd_Offwhite.svg');
+  height: rem(243);
+  left: 0;
+  top: 0;
+  width: rem(675);
+}
+
+.--money:before {
+  background-image: url('../../images/Money_FindDeals-01.svg');
+  height: rem(270);
+  left: 0;
+  margin-left: rem(188);
+  top: rem(-90);
+  width: rem(190);
+}
+
+.--money:after {
+  background-image: url('../../images/SplatterBkrgd_Mint.svg');
+  height: rem(187);
+  left: 0;
+  margin-left: rem(20);
+  top: 0;
+  width: rem(535);
+}
+
+.--good-job:before {
+  background-image: url('../../images/GoodJob-Florence.svg');
+  height: rem(85);
+  margin-left: rem(-90);
+  top: rem(-85);
+  width: rem(180);
+
+  @media (screen(lg)) {
+    bottom: 0;
+    height: rem(126);
+    left: 0;
+    margin-left: rem(130);
+    top: unset;
+    width: rem(266);
+  }
+}
+
+.--good-job:after {
+  background-image: url('../../images/SplatterBkgrd_Minty.svg');
+  bottom: rem(-20);
+  height: rem(236);
+  margin-left: rem(-10);
+  width: rem(375);
+}
+
+.--phone:before {
+  background-image: url('../../images/Telephone_KeepsYouHonest-01.svg');
+  bottom: rem(-40);
+  height: rem(220);
+  left: 0;
+  margin-left: rem(210);
+  width: rem(110);
+}
+
+.--phone:after {
+  background-image: url('../../images/SplatterBackground_Coral.svg');
+  bottom: rem(-20);
+  height: rem(234);
+  margin-left: rem(-58);
+  width: rem(455);
+}
+
