@@ -22,14 +22,13 @@
   }
 
   @media (screen(lg)) {
-    box-sizing: border-box;
     border-radius: rem(100) rem(10) rem(10) rem(100);
     padding: rem(32) rem(22) rem(32) rem(82);
 
     .-orange,
     .sm-sans-serif-text {
       text-align: left;
-      line-height: 1.1;
+      line-height: 1.375;
     }
 
     &.-alt {
@@ -45,12 +44,11 @@
 }
 
 .factors-section {
-
   .tag-list {
-    padding-top: rem(300);
+    margin-top: rem(300);
 
     @media (screen(lg)) {
-      padding-top: rem(70);
+      margin-top: rem(70);
     }
   }
 
@@ -82,19 +80,22 @@
         transform: translateX(rem(50));
       }
 
+      &:nth-child(2) {
+        transform: translateY(rem(-20));
+      }
+
       &:nth-child(3) {
-        transform: translateX(rem(65));
+        transform: translate(rem(85), rem(-30));
       }
 
       &:nth-child(4) {
-        transform: translate(-40%, rem(-90));
+        transform: translate(-40%, rem(-150));
       }
     }
   }
 }
 
 .behind-scenes-section {
-
   .tag-list {
     padding-top: rem(300);
 
@@ -106,7 +107,7 @@
   @media (screen(lg)) {
     .tag-list__item {
       width: rem(400);
-      margin: rem(-120) auto rem(-10) 60%;
+      margin: rem(-100) auto rem(-10) 60%;
       transform: translateY(-40%);
 
       .tag-list__btn {
@@ -146,6 +147,7 @@
   @media (screen(xl)) {
     .tag-list__item {
       width: rem(500);
+      margin: rem(-135) auto rem(-10) 60%;
       
       .-orange,
       .sm-sans-serif-text {

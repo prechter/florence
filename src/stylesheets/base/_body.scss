@@ -2,10 +2,11 @@ body {
   font-family: $base;
   font-size: rem(18);
   margin: 0;
+  overflow-x: hidden;
 }
 
 *,
-*:after,
-*:before {
+*::after,
+*::before {
   box-sizing: border-box;
 }
