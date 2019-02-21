@@ -1,0 +1,21 @@
+.closing-section {
+  background-color: color(mint-green);
+  margin: 0;
+
+  @media (screen(lg)) {
+    
+  }
+
+  .sm-sans-serif-text {
+    padding-bottom: rem(25);
+    color: color(emerald-green);
+
+    @media (screen(lg)) {
+      text-align: left;
+    }
+  }
+
+  .closing-section__figure {
+    display: none;
+  }
+}
