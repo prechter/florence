@@ -4,12 +4,13 @@
   padding-bottom: rem(15);
 
   @media (screen(lg)) {
-    
+    padding-bottom: rem(150);
+    padding-top: rem(85);
   }
 
   .sm-sans-serif-text {
-    padding-bottom: rem(25);
     color: color(emerald-green);
+    margin-bottom: rem(25);
 
     @media (screen(lg)) {
       text-align: left;
@@ -18,5 +19,16 @@
 
   .closing-section__figure {
     display: none;
+
+    @media (screen(lg)) {
+      display: inline;
+      float: right;
+
+      .closing-section__figure__img {
+        height: rem(260);
+        margin: 0 rem(70) 0 rem(70);
+        width: rem(200);
+      }
+    }
   }
 }
