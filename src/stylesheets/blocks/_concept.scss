@@ -13,8 +13,7 @@
 }
 
 .concept-section__character-img {
-  background-image: url('../../images/Florence_IconPrimary-01.svg');
-  background: center / contain no-repeat;
+  background: url('../../images/Florence_IconPrimary-01.svg') no-repeat center / contain;
   height: rem(150);
   position: absolute;
   right: calc(50vw - 88px);
