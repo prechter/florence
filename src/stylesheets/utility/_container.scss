@@ -5,8 +5,23 @@
   padding: 0 rem(18) 0 rem(18);
   position: relative;
 
-  &.-lg-width {
 
+  &.-xs-width {
+    max-width: rem(610);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  &.-md-width {
+    max-width: rem(700);
+    
+    @media (screen(lg)) {
+      max-width: rem(870);
+    }
+  }
+
+  &.-lg-width {
     @media (screen(lg)) {
       width: rem(900);
       padding: 0 rem(80) 0 rem(80);
@@ -16,21 +31,9 @@
       width: rem(1030);
       padding: 0 rem(100) 0 rem(100);
     }
-
-  }
-
-  &.-md-width {
-    max-width: rem(870);
   }
 
   &.-xl-width {
     max-width: rem(1190);
-  }
-
-  &.-xs-width {
-    max-width: rem(610);
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
   }
 }
