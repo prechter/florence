@@ -14,9 +14,7 @@
 
 .concept-section__character-img {
   background-image: url('../../images/Florence_IconPrimary-01.svg');
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
+  background: center / contain no-repeat;
   height: rem(150);
   position: absolute;
   right: calc(50vw - 88px);
@@ -24,9 +22,9 @@
   width: rem(140);
 
   @media (screen(lg)) {
-    height: rem(281);
+    height: rem(280);
     width: rem(304);
-    right: calc(50vw - 178px);
+    right: calc(50vw - 172px);
     top: rem(-135);
   }
 }
@@ -62,21 +60,17 @@
   padding: 0;
   margin: 0;
 
-  :before {
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
+  ::before {
+    background: center / contain no-repeat;
     content: '';
     left: 50%;
     position: absolute;
     z-index: 1;
   }
 
-  :after {
+  ::after {
     @media (screen(lg)) {
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: contain;
+      background: center / contain no-repeat;
       content: '';
       position: absolute;
       z-index: 0;
@@ -91,14 +85,10 @@
     padding: rem(20);
     position: relative;
     
-    &:nth-child(2),
-    &:nth-child(3),
-    &:nth-child(4),
-    &:nth-child(5),
-    &:nth-child(7) {
+    &:not(:first-child):not(:nth-child(6)) {
       display: none;
     }
-
+  
     @media (screen(lg)) {
       border-radius: rem(5);
       display: flex;
@@ -110,11 +100,7 @@
       padding: rem(85) rem(100);
       position: relative;
   
-      &:nth-child(2),
-      &:nth-child(3),
-      &:nth-child(4),
-      &:nth-child(5),
-      &:nth-child(7) {
+      &:not(:first-child):not(:nth-child(6)) {
         align-items: center;
         display: flex;
         flex-direction: row;
@@ -137,11 +123,18 @@
 
   @media (screen(lg)) {
     display: inline-block;
-    margin: 0;
+    margin-left: rem(20);
+    margin-right: 0;
+    width: rem(320);
+  }
+
+  @media (screen(xl)) {
+    margin-left: 0;
+    width: rem(340);
   }
 }
 
-.--coffee:before {
+.--coffee::before {
   background-image: url('../../images/CoffeeMug_TheConcept-01.svg');
   height: rem(90);
   margin-left: rem(-45);
@@ -157,15 +150,15 @@
   }
 }
 
-.--coffee:after {
-  background-image: url('../../images/Yellow-Splatter-Bkgrd.svg');
+.--coffee::after {
+  background-image: url('../../images/Yellow-Splatter-Bkgrd.png');
   bottom: 0;
   height: rem(126);
   margin-left: rem(50);
   width: rem(312);
 }
 
-.--pill-bottle:before {
+.--pill-bottle::before {
   background-image: url('../../images/Bottle_Yellow_Foreground_IntroSection-01.svg');
   height: rem(137);
   left: 0;
@@ -175,15 +168,15 @@
   z-index: 1;
 }
 
-.--pill-bottle:after {
-  background-image: url('../../images/Yellow-Splatter-Bkgrd.svg');
+.--pill-bottle::after {
+  background-image: url('../../images/Yellow-Splatter-Bkgrd.png');
   bottom: 0;
   height: rem(126);
   margin-left: rem(50);
   width: rem(312);
 }
 
-.--thermometer:before {
+.--thermometer::before {
   background-image: url('../../images/Thermometer_CheckUp-01.svg');
   height: rem(191);
   margin-left: rem(-85);
@@ -191,15 +184,15 @@
   width: rem(120);
 }
 
-.--thermometer:after {
-  background-image: url('../../images/SplatterBkrgd_Lilac.svg');
+.--thermometer::after {
+  background-image: url('../../images/SplatterBkrgd_Lilac.png');
   height: rem(154);
-  margin-left: rem(206);
+  margin-left: rem(126);
   top: 0;
   width: rem(360);
 }
 
-.--pill-box:before {
+.--pill-box::before {
   background-image: url('../../images/BoxPills_Remember-01.svg');
   height: rem(154);
   left: 0;
@@ -208,15 +201,15 @@
   width: rem(460);
 }
 
-.--pill-box:after {
-  background-image: url('../../images/SplatterBkrgd_Offwhite.svg');
+.--pill-box::after {
+  background-image: url('../../images/SplatterBkrgd_Offwhite.png');
   height: rem(243);
   left: 0;
   top: 0;
   width: rem(675);
 }
 
-.--money:before {
+.--money::before {
   background-image: url('../../images/Money_FindDeals-01.svg');
   height: rem(270);
   left: 0;
@@ -225,8 +218,8 @@
   width: rem(190);
 }
 
-.--money:after {
-  background-image: url('../../images/SplatterBkrgd_Mint.svg');
+.--money::after {
+  background-image: url('../../images/SplatterBkrgd_Mint.png');
   height: rem(187);
   left: 0;
   margin-left: rem(20);
@@ -234,7 +227,7 @@
   width: rem(535);
 }
 
-.--good-job:before {
+.--good-job::before {
   background-image: url('../../images/GoodJob-Florence.svg');
   height: rem(85);
   margin-left: rem(-90);
@@ -251,15 +244,15 @@
   }
 }
 
-.--good-job:after {
-  background-image: url('../../images/SplatterBkgrd_Minty.svg');
+.--good-job::after {
+  background-image: url('../../images/SplatterBkgrd_Minty.png');
   bottom: rem(-20);
   height: rem(236);
   margin-left: rem(-10);
   width: rem(375);
 }
 
-.--phone:before {
+.--phone::before {
   background-image: url('../../images/Telephone_KeepsYouHonest-01.svg');
   bottom: rem(-40);
   height: rem(220);
@@ -268,8 +261,8 @@
   width: rem(110);
 }
 
-.--phone:after {
-  background-image: url('../../images/SplatterBackground_Coral.svg');
+.--phone::after {
+  background-image: url('../../images/SplatterBackground_Coral.png');
   bottom: rem(-20);
   height: rem(234);
   margin-left: rem(-58);
