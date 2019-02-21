@@ -29,5 +29,8 @@
 
   &.-xs-width {
     max-width: rem(610);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
   }
 }

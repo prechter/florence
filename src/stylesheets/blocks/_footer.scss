@@ -1,0 +1,55 @@
+.footer {
+  background-color: color(deep-blue);
+  padding-top: rem(25);
+  padding-bottom: rem(80);
+  position: relative;
+  overflow: hidden;
+
+  .container {
+    .sm-title,
+    .lg-text {
+      color: color(white);
+      @include font-smoothing;
+    }
+  
+    .lg-text {
+      line-height: rem(24);
+      font-size: rem(14);
+    }
+
+    span {
+      display: block;
+    }
+
+    .footer__img {
+      height: rem(50);
+      width: rem(135);
+      margin-top: rem(10);
+    }
+
+    &::after {
+      background: url('../../images/Florence_IconPrimary-01.svg') no-repeat center / contain;
+      height: rem(140);
+      width: rem(130);
+      position: absolute;
+      bottom: rem(-150);
+      // left: 50%;
+      right: calc(50% - 80px);
+      content: '';
+    }
+  }
+}
+
+.footer__btn {
+  border: rem(4) solid color(yellow);
+  background-color: color(deep-blue);
+  color: color(yellow);
+  border-radius: rem(100) rem(100);
+  width: rem(230);
+  text-transform: uppercase;
+  height: rem(45);
+  margin: rem(30) auto rem(10) auto;
+  letter-spacing: 0.05em;
+  font-size: rem(17);
+}
+
