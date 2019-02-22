@@ -16,19 +16,19 @@
       text-align: left;
     }
   }
+}
 
-  .closing-section__figure {
-    display: none;
+.closing-section__figure {
+  display: none;
 
-    @media (screen(lg)) {
-      display: inline;
-      float: right;
-
-      .closing-section__figure__img {
-        height: rem(260);
-        margin: 0 rem(70) 0 rem(70);
-        width: rem(200);
-      }
-    }
+  @media (screen(lg)) {
+    display: inline;
+    float: right;
   }
+}
+
+.closing-section__figure__img {
+  height: rem(260);
+  margin: 0 rem(70) 0 rem(70);
+  width: rem(200);
 }

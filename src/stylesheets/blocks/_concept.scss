@@ -89,18 +89,6 @@
     display: none;
   }
 
-  .concept-section__list__item__text {
-    max-width: rem(340);
-    z-index: 1;
-    margin-left: auto;
-    margin-right: auto;
-
-    @media (screen(lg)) {
-      width: rem(410);
-      margin-left: 0;
-    }
-  }
-
   @media (screen(lg)) {
     border-radius: rem(5);
     display: flex;
@@ -118,6 +106,18 @@
       flex-direction: row;
       justify-content: space-between;
     }
+  }
+}
+
+.concept-section__list__item__text {
+  max-width: rem(340);
+  z-index: 1;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media (screen(lg)) {
+    width: rem(410);
+    margin-left: 0;
   }
 }
 
