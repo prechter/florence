@@ -5,8 +5,15 @@
   margin-top: 0;
   text-align: center;
 
+  @media (screen(md)) {
+    max-width: rem(600);
+    margin-left: auto;
+    margin-right: auto;
+  }
+
   @media (screen(lg)) {
     font-size: rem(28);
+    max-width: 100%;
   }
 }
 

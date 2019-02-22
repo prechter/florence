@@ -44,3 +44,18 @@
     }
   }
 }
+
+.lg-title {
+  color: color(emerald-green);
+  font-family: $serif;
+  font-size: rem(30);
+  font-weight: lighter;
+  line-height: rem(53);
+  margin: 0;
+  text-align: center;
+
+  @media (screen(lg)) {
+    font-size: rem(60);
+    margin-bottom: rem(25);
+  }
+}

@@ -60,7 +60,6 @@
   margin: 0;
 }
 
-  
 .concept-section__list__item {
   align-items: center;
   background-color: color(white);
@@ -90,6 +89,18 @@
     display: none;
   }
 
+  .concept-section__list__item__text {
+    max-width: rem(340);
+    z-index: 1;
+    margin-left: auto;
+    margin-right: auto;
+
+    @media (screen(lg)) {
+      width: rem(410);
+      margin-left: 0;
+    }
+  }
+
   @media (screen(lg)) {
     border-radius: rem(5);
     display: flex;
@@ -106,11 +117,6 @@
       display: flex;
       flex-direction: row;
       justify-content: space-between;
-    }
-
-    .concept-section__list__item__text {
-      width: rem(410);
-      z-index: 1;
     }
   }
 }
