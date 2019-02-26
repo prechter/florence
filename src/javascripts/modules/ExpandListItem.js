@@ -2,7 +2,7 @@ export default class ExpandListItem {
   constructor(el) {
     this.el = el
     this.tag = el.parentNode
-    this.el.addEventListener('click', this.expand )
+    this.el.addEventListener('click', this.expand)
   }
 
   expand = () => {
