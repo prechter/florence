@@ -9,13 +9,12 @@
   justify-content: center;
   position: absolute;
 
-  //combine into one class with modifier for smaller icon
-
   svg {
     display: block;
     left: 50%;
     margin: auto;
     padding: 0;
+    transition: .1s ease-in-out;
   }
 
   @media (screen(lg)) {

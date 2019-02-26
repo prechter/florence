@@ -16,7 +16,8 @@
   max-width: rem(500);
   padding: 0 rem(12) rem(24) rem(12);
   position: relative;
-
+  visibility: visible;
+  
   a {
     color: color(coral-pink);
   }
@@ -24,6 +25,7 @@
   @media (screen(lg)) {
     border-radius: rem(100) rem(10) rem(10) rem(100);
     padding: rem(32) rem(22) rem(32) rem(82);
+    visibility: hidden;
 
     .-orange,
     .sm-sans-serif-text {
@@ -43,6 +45,41 @@
   }
 }
 
+.tag-list__btn {
+  pointer-events: none;
+
+  @media (screen(lg)) {
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    outline: none;
+    pointer-events: unset;
+    top: 0;
+    transform: translateX(-50%);
+    transition: .1s ease-in-out;
+    visibility: visible;
+
+    &:focus {
+      box-shadow: 0 0 0 rem(6) color(focus-outline);
+    }
+
+    &:hover {
+      height: rem(80);
+      width: rem(80);
+
+      svg {
+        height: rem(48);
+      }
+    }
+  
+    [aria-pressed="false"]  {
+      border-radius: 50%;
+      border: solid rem(4.5) color(white);
+      box-shadow: 0 0 0 rem(6) rgba(255, 255, 255, 0.5);
+    }
+  }
+}
+
 .factors-section {
   .tag-list {
     margin-top: rem(300);
@@ -56,14 +93,6 @@
     .tag-list__item {
       max-width: rem(360);
       margin: rem(-10) auto rem(-10) 50%;
-
-      .tag-list__btn {
-        margin: auto;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        transform: translateX(-50%);
-      }
 
       &.-alt {
         margin-right: 50%;
@@ -109,14 +138,6 @@
       width: rem(400);
       margin: rem(-100) auto rem(-10) 60%;
       transform: translateY(-40%);
-
-      .tag-list__btn {
-        margin: auto;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        transform: translateX(-50%);
-      }
 
       &.-alt {
         margin: rem(-75) 60% rem(-10) auto;
