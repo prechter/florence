@@ -71,12 +71,14 @@
         height: rem(48);
       }
     }
-  
-    [aria-pressed="false"]  {
-      border-radius: 50%;
-      border: solid rem(4.5) color(white);
-      box-shadow: 0 0 0 rem(6) rgba(255, 255, 255, 0.5);
-    }
+  }
+}
+
+@media (screen(lg)) {
+  [aria-expanded="false"] {
+    border-radius: 50%;
+    border: solid rem(4.5) color(white);
+    box-shadow: 0 0 0 rem(6) rgba(255, 255, 255, 0.5);
   }
 }
 
