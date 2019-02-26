@@ -24,7 +24,14 @@ $colors: (
 
 $screens: (
   sm:                   'min-width: 31.25rem', // 500px
+  SM:                   'max-width: 31.25rem',
+
   md:                   'min-width: 45rem', // 720px
+  MD:                   'max-wdith: 45rem',
+
   lg:                   'min-width: 60rem', // 960px
-  xl:                   'min-width: 81.25rem' // 1300px
+  LG:                   'max-width: 60rem',
+
+  xl:                   'min-width: 81.25rem', // 1300px
+  XL:                   'max-width: 81.25rem'
 );
