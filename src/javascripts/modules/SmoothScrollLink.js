@@ -1,6 +1,6 @@
 import SmoothScroll from 'smooth-scroll'
 
-export default class SmoothScrolling {
+export default class SmoothScrollLink {
   constructor(el) {
     this.el = el
     this.href = this.el.getAttribute('href')
