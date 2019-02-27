@@ -12,22 +12,23 @@
 
 .factors-section__diagram {
   background-image: url('../../images/splatter_background.png');
-  background-size: rem(450);
-  background-repeat: no-repeat;
   background-position: center;
+  background-repeat: no-repeat;
+  background-size: rem(450);
   height: rem(315);
-  width: rem(350);
-  position: absolute;
-  z-index: -1;
-  margin: auto;
   left: 0;
+  margin: auto;
+  max-width: rem(350);
+  min-width: rem(290);
+  position: absolute;
   right: 0;
+  z-index: -1;
 
   @media (screen(lg)) {
     background-size: rem(1000);
     height: rem(800);
     margin: rem(-40) auto auto;
-    width: rem(1000);
+    max-width: rem(1000);
   }
 
   .human-figure {
