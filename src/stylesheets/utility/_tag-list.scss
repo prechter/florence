@@ -46,7 +46,7 @@
 }
 
 .tag-list__btn {
-  @media (screen(LG)) {
+  @media (screen(lg-max)) {
     pointer-events: none;
   }
 
@@ -55,6 +55,7 @@
     left: 0;
     margin: auto;
     outline: none;
+    cursor: pointer;
     top: 0;
     transform: translateX(-50%);
     transition: .1s ease-in-out;
