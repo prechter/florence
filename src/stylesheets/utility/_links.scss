@@ -9,10 +9,24 @@ sup {
   vertical-align: top;
 }
 
-.problem-section a {
-  text-decoration: none;
-}
-
+.problem-section a,
 .question-section a {
   text-decoration: none;
 }
+
+.underline {
+  background-image: linear-gradient(color(coral-pink), color(coral-pink));
+  background-position: 0% 100%;
+  background-repeat: no-repeat;
+  background-size: 0% 2px;
+  text-decoration: none;
+  transition: background-size .3s;
+
+  &:hover, 
+  &:focus {
+    background-size: 100% 2px;
+  }
+}
+
+
+

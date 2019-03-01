@@ -1,12 +1,15 @@
-body {
-  font-family: $base;
-  font-size: rem(18);
-  margin: 0;
-  overflow-x: hidden;
-}
-
 *,
 *::after,
 *::before {
   box-sizing: border-box;
+}
+
+body {
+  font-family: $base;
+  font-size: rem(18);
+  margin: 0;
+}
+
+.page-wrapper {
+  overflow-x: hidden;
 }

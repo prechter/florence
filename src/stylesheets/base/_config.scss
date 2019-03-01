@@ -18,12 +18,20 @@ $colors: (
   coral-pink:           #EA4446,
   urSuchAPill-dark-pink:#CF555E,
   urSuchAPill-pink:     #E75F69,
-  gradient-background:  linear-gradient(#184D66 0%, #D3E7E2 100%)
+  gradient-background:  linear-gradient(#184D66 0%, #D3E7E2 100%),
+  focus-outline:        rgba(78, 141, 241, 0.5)
 );
 
 $screens: (
-  sm:                   'min-width: 31.25rem', // 500px
-  md:                   'min-width: 45rem', // 720px
-  lg:                   'min-width: 60rem', // 960px
-  xl:                   'min-width: 81.25rem' // 1300px
+  sm-max:               'max-width: 31.19rem',      // 499px
+  sm:                   'min-width: 31.25rem',      // 500px
+
+  md-max:               'max-width: 44.94rem',      // 719px
+  md:                   'min-width: 45rem',         // 720px
+
+  lg-max:               'max-width: 59.94rem',      // 959px
+  lg:                   'min-width: 60rem',         // 960px
+
+  xl-max:               'max-width: 81.19rem',      // 1299px
+  xl:                   'min-width: 81.25rem'       // 1300px
 );

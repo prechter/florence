@@ -9,13 +9,12 @@
   justify-content: center;
   position: absolute;
 
-  //combine into one class with modifier for smaller icon
-
   svg {
     display: block;
     left: 50%;
     margin: auto;
     padding: 0;
+    transition: .1s ease-in-out;
   }
 
   @media (screen(lg)) {
@@ -30,15 +29,41 @@
   top: rem(-12);
   width: rem(36);
 
-  svg {
-    height: rem(14);
+  @media (screen(lg-max)) {
+    pointer-events: none;
   }
 
   @media (screen(lg)) {
-    width: rem(75);
+    bottom: 0;
+    cursor: pointer;
     height: rem(75);
+    left: 0;
+    margin: auto;
+    outline: none;
+    top: 0;
+    transform: translateX(-50%);
+    transition: .1s ease-in-out;
+    visibility: visible;
+    width: rem(75);
 
-    svg {
+    &:focus {
+      box-shadow: 0 0 0 rem(6) color(focus-outline);
+    }
+
+    &:hover {
+      height: calc(75px * 1.2);
+      width: calc(75px * 1.2);
+
+      svg {
+        height: calc(45px * 1.2);
+      }
+    }
+  }
+
+  svg {
+    height: rem(14);
+
+    @media (screen(lg)) {
       height: rem(45);
     }
   }
@@ -53,11 +78,6 @@
   }
 
   @media (screen(lg)) {
-    height: 0;
-    width: 0;
-
-    svg {
-      height: 0;
-    }
+    display: none;
   }
 }
