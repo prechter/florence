@@ -14,4 +14,4 @@ View the [project](https://florence-exploration.surge.sh/).
 
 ## Acknowledgments
 
-* Renee Cagnina Haynes - web design
+* [Blair Culbreth](https://www.viget.com/about/team/bculbreth/) - Designer
